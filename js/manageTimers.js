@@ -225,7 +225,7 @@ timerTable.addEventListener('click', function startClickedTimer(ev) {
   while (rowClickedOn.parentElement !== timerTable){
     rowClickedOn  = rowClickedOn.parentElement;
   }
-  let activeRowIndex = getIndexOfParentEle(rowClickedOn);
+  const activeRowIndex = getIndexOfParentEle(rowClickedOn);
   if (activeTimerRow !== null) activeTimerRow.stopTimer();
   const timerRowData = timerData[activeRowIndex];
   activeTimerRow = timerRowData;
