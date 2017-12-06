@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>How are you spending your time?</title>
+  <meta name="description" content="Analyze how you're spending your time using stopwatches.">
+  <meta name="author" content="Daniel Shepsis">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- General interface Styling: -->
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+  <!--Script for managing timers: -->
+  <script src="js/manageTimers.js" async></script>
+</head>
+
+<body>
+  <div id="center-col">
+    <header id="header-row">
+      <h1 id="app-title">
+        Time Analyzer
+      </h1>
+      <a href="https://github.com/dshepsis/MyTime" id="hdr-repo-link" class="small">
+        Go to the GitHub Repo
+      </a>
+    </header>
+
+    <main role="main">
+      <p id="app-description">
+        This is a tool for analyzing the way your time is divided. A timer is always running, because time is always passing.
+      </p>
+
+      <table id="timer-table">
+        <tr id="active">
+          <td class="time-passed">
+            00:00:00
+          </td>
+          <td>
+            <input type="text" class="timer-label" value="Work" />
+          </td>
+        </tr>
+        <tr>
+          <td class="time-passed">
+            00:00:00
+          </td>
+          <td>
+            <input type="text" class="timer-label" value="Play" />
+          </td>
+        </tr>
+        <tr>
+          <td class="time-passed">
+            00:00:00
+          </td>
+          <td>
+            <input type="text" class="timer-label" value="Sleep" />
+          </td>
+        </tr>
+      </table>
+    </main>
+  </div>
+
+  <footer>
+    <div id="footer-content">
+      <a href="https://github.com/dshepsis/MyTime" id="ftr-repo-link">GitHub Repo</a>
+    </div>
+  </footer>
+</body>
+</html>
